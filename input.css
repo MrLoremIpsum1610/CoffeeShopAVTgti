@@ -24,76 +24,92 @@
         font-style: swap;
     }
 /* 1. Dana Hairline (وزن 10) */
-@font-face {
-    font-family: "Dana Hairline";
-    font-style: normal;
-    font-weight: 10;
-    src: url('../../fonts/woff2/Dana-Hairline.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-Hairline.woff') format('woff');
-}
+    @font-face {
+        font-family: "Dana Hairline";
+        font-style: normal;
+        font-weight: 10;
+        src: url('../../fonts/woff2/Dana-Hairline.woff2') format('woff2'),
+             url('../../fonts/woff/Dana-Hairline.woff') format('woff');
+    }
 
-/* 2. Dana Thin (وزن 100) */
-@font-face {
-    font-family: "Dana Thin";
-    font-style: normal;
-    font-weight: 100;
-    src: url('../../fonts/woff2/Dana-Thin.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-Thin.woff') format('woff');
-}
+    /* 2. Dana Thin (وزن 100) */
+    @font-face {
+        font-family: "Dana Thin";
+        font-style: normal;
+        font-weight: 100;
+        src: url('../../fonts/woff2/Dana-Thin.woff2') format('woff2'),
+             url('../../fonts/woff/Dana-Thin.woff') format('woff');
+    }
 
-/* 3. Dana UltraLight (وزن 200) */
-@font-face {
-    font-family: "Dana UltraLight";
-    font-style: normal;
-    font-weight: 200;
-    src: url('../../fonts/woff2/Dana-UltraLight.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-UltraLight.woff') format('woff');
-}
+    /* 3. Dana UltraLight (وزن 200) */
+    @font-face {
+        font-family: "Dana UltraLight";
+        font-style: normal;
+        font-weight: 200;
+        src: url('../../fonts/woff2/Dana-UltraLight.woff2') format('woff2'),
+             url('../../fonts/woff/Dana-UltraLight.woff') format('woff');
+    }
 
-/* 4. Dana Light (وزن 300) */
-@font-face {
-    font-family: "Dana Light";
-    font-style: normal;
-    font-weight: 300;
-    src: url('../../fonts/woff2/Dana-Light.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-Light.woff') format('woff');
-}
+    /* 4. Dana Light (وزن 300) */
+    @font-face {
+        font-family: "Dana Light";
+        font-style: normal;
+        font-weight: 300;
+        src: url('../../fonts/woff2/Dana-Light.woff2') format('woff2'),
+             url('../../fonts/woff/Dana-Light.woff') format('woff');
+    }
+    @font-face {
+        font-family: "Dana Regular";
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+        src: url('../../fonts/woff2/Dana-Regular.woff2') format('woff2'),
+             url('../../fonts/woff/Dana-Regular.woff') format('woff');
+    }
+    @font-face {
+        font-family: "Dana Regular";
+        font-style: normal;
+        font-display: swap;
+        font-weight: 400;
+        src: url('../../fonts/woff2/Dana-Regular.woff2') format('woff2'),
+             url('../../fonts/woff/Dana-Regular.woff') format('woff');
+    }
 
-/* 5. Dana Medium (وزن 500) */
-@font-face {
-    font-family: "Dana Medium";
-    font-style: normal;
-    font-weight: 500;
-    src: url('../../fonts/woff2/Dana-Medium.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-Medium.woff') format('woff');
-}
+    /* 5. Dana Medium (وزن 500) */
+    @font-face {
+        font-family: "Dana Medium";
+        font-style: normal;
+        font-weight: 500;
+        src: url('../../fonts/woff2/Dana-Medium.woff2') format('woff2'),
+             url('../../fonts/woff/Dana-Medium.woff') format('woff');
+    }
 
-/* 6. Dana DemiBold (وزن 600) */
-@font-face {
-    font-family: "Dana DemiBold";
-    font-style: normal;
-    font-weight: 600;
-    src: url('../../fonts/woff2/Dana-DemiBold.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-DemiBold.woff') format('woff');
-}
+    /* 6. Dana DemiBold (وزن 600) */
+    @font-face {
+        font-family: "Dana DemiBold";
+        font-style: normal;
+        font-weight: 600;
+        src: url('../../fonts/woff2/Dana-DemiBold.woff2') format('woff2'),
+             url('../../fonts/woff/Dana-DemiBold.woff') format('woff');
+    }
 
-/* 7. Dana Bold (وزن 700) */
-@font-face {
-    font-family: "Dana Bold";
-    font-style: normal;
-    font-weight: bold; /* معادل عددی 700 */
-    src: url('../../fonts/woff2/Dana-Bold.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-Bold.woff') format('woff');
-}
+    /* 7. Dana Bold (وزن 700) */
+    @font-face {
+        font-family: "Dana Bold";
+        font-style: normal;
+        font-weight: bold; /* معادل عددی 700 */
+        src: url('../../fonts/woff2/Dana-Bold.woff2') format('woff2'),
+             url('../../fonts/woff/Dana-Bold.woff') format('woff');
+    }
 
-/* 8. Dana ExtraBold (وزن 800) */
-@font-face {
-    font-family: "Dana ExtraBold";
-    font-style: normal;
-    font-weight: 800;
-    src: url('../../fonts/woff2/Dana-ExtraBold.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-ExtraBold.woff') format('woff');
-}
+    /* 8. Dana ExtraBold (وزن 800) */
+    @font-face {
+        font-family: "Dana ExtraBold";
+        font-style: normal;
+        font-weight: 800;
+        src: url('../../fonts/woff2/Dana-ExtraBold.woff2') format('woff2'),
+             url('../../fonts/woff/Dana-ExtraBold.woff') format('woff');
+    }
 
 }
 @layer components{
