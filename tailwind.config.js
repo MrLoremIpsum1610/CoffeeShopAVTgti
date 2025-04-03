@@ -20,7 +20,8 @@ module.exports = {
         
       },
       spacing:{
-        '3.5':"14px"
+        '3.5':"14px",
+        '2.5':"10px",
       },
       fontFamily:{
         'Dana-ExtraLight': '"Dana ExtraLight"',

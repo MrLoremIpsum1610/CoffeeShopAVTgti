@@ -592,7 +592,7 @@ html{
   font-weight: 10;
 
   src: url('../../fonts/woff2/Dana-Hairline.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-Hairline.woff') format('woff');
+             url('../../fonts/woff/Dana-Hairline.woff') format('woff');
 }
 
 /* 2. Dana Thin (وزن 100) */
@@ -605,7 +605,7 @@ html{
   font-weight: 100;
 
   src: url('../../fonts/woff2/Dana-Thin.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-Thin.woff') format('woff');
+             url('../../fonts/woff/Dana-Thin.woff') format('woff');
 }
 
 /* 3. Dana UltraLight (وزن 200) */
@@ -618,7 +618,7 @@ html{
   font-weight: 200;
 
   src: url('../../fonts/woff2/Dana-UltraLight.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-UltraLight.woff') format('woff');
+             url('../../fonts/woff/Dana-UltraLight.woff') format('woff');
 }
 
 /* 4. Dana Light (وزن 300) */
@@ -631,7 +631,33 @@ html{
   font-weight: 300;
 
   src: url('../../fonts/woff2/Dana-Light.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-Light.woff') format('woff');
+             url('../../fonts/woff/Dana-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Dana Regular";
+
+  font-style: normal;
+
+  font-display: swap;
+
+  font-weight: 400;
+
+  src: url('../../fonts/woff2/Dana-Regular.woff2') format('woff2'),
+             url('../../fonts/woff/Dana-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: "Dana Regular";
+
+  font-style: normal;
+
+  font-display: swap;
+
+  font-weight: 400;
+
+  src: url('../../fonts/woff2/Dana-Regular.woff2') format('woff2'),
+             url('../../fonts/woff/Dana-Regular.woff') format('woff');
 }
 
 /* 5. Dana Medium (وزن 500) */
@@ -644,7 +670,7 @@ html{
   font-weight: 500;
 
   src: url('../../fonts/woff2/Dana-Medium.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-Medium.woff') format('woff');
+             url('../../fonts/woff/Dana-Medium.woff') format('woff');
 }
 
 /* 6. Dana DemiBold (وزن 600) */
@@ -657,7 +683,7 @@ html{
   font-weight: 600;
 
   src: url('../../fonts/woff2/Dana-DemiBold.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-DemiBold.woff') format('woff');
+             url('../../fonts/woff/Dana-DemiBold.woff') format('woff');
 }
 
 /* 7. Dana Bold (وزن 700) */
@@ -672,7 +698,7 @@ html{
   /* معادل عددی 700 */
 
   src: url('../../fonts/woff2/Dana-Bold.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-Bold.woff') format('woff');
+             url('../../fonts/woff/Dana-Bold.woff') format('woff');
 }
 
 /* 8. Dana ExtraBold (وزن 800) */
@@ -685,7 +711,7 @@ html{
   font-weight: 800;
 
   src: url('../../fonts/woff2/Dana-ExtraBold.woff2') format('woff2'),
-         url('../../fonts/woff/Dana-ExtraBold.woff') format('woff');
+             url('../../fonts/woff/Dana-ExtraBold.woff') format('woff');
 }
 
 .DropStore {
@@ -769,8 +795,24 @@ html{
   position: relative;
 }
 
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.top-2\.5 {
+  top: 10px;
+}
+
+.-top-2\.5 {
+  top: -10px;
 }
 
 .z-30 {
@@ -779,6 +821,11 @@ html{
 
 .m-0 {
   margin: 0px;
+}
+
+.mx-\[5\%\] {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .my-6 {
@@ -993,6 +1040,14 @@ html{
 
 .bg-\[url\(\'\.\.\/images\/headerBgDesktop\.png\'\)\] {
   background-image: url('../images/headerBgDesktop.png');
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-0 {
@@ -1283,8 +1338,17 @@ html{
 }
 
 @media (max-width: 640px) {
+  .max-sm\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .max-sm\:mr-4 {
     margin-right: 1rem;
+  }
+
+  .max-sm\:w-full {
+    width: 100%;
   }
 
   .max-sm\:rounded-none {
@@ -1303,6 +1367,10 @@ html{
 }
 
 @media (max-width: 1024px) {
+  .max-lg\:block {
+    display: block;
+  }
+
   .max-lg\:rounded-tl-none {
     border-top-left-radius: 0px;
   }
