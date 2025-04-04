@@ -146,6 +146,9 @@ let dontClose = null;
 // x++ , ++x در تک خط فرقی ندارند اما هنگام فراخوانی در متغیر ها،ترتیبی عددی حمع یا تفریق و غیره میشود
 //x++ اول x وارد متغیر ثالث میشود و بعد جمع میشود یعنی مقدار جدید بدست نمی اید!!
 // ++x اابتدا مقدار جدید وارد x میشود و سپس وارد متغیر ثالث میشود - پس مقدار جدید نمایش داده میشود!!
+
+
+//#region 
 const navbn = document.querySelector('.closed');
 let isNavOpen = false;
 const Drop = document.querySelector('.drop');
@@ -165,6 +168,7 @@ const ShowingStoreBasket = document.querySelector('.ShowStoreBasket');
 const ShowingBasket = document.querySelector('.ShowingBasket');
 const bgD = document.querySelector('.bgUnTouch');
 
+//#endregion
 Dropping[0].addEventListener('click',(e)=>{
     Drop.classList.toggle('drop--dropdown');
     Rotate.classList.toggle('rotating--rotate180');
@@ -181,39 +185,55 @@ navopen.addEventListener('click',(e)=>{
     itemM.classList.toggle('opneup--close')
     bgD.classList.toggle('ShowingBasketO')
 })
+
 let isDark = false;
+
+if (window.localStorage.getItem('theme') == 'dark') {
+    document.documentElement.className = 'dark';
+    DarkSelector[0].setAttribute('xlink:href','#sun');
+    DarkSelector[1].setAttribute('xlink:href','#sun');
+    swtChange.innerHTML = 'تم روشن';
+    setTimeout(function(){
+        isDark = true;
+    },1)
+}
+
 switchTheme[0].addEventListener('click',(e)=>{
     if (!isDark) {
         document.documentElement.className = 'dark';
-        DarkSelector[0].setAttribute('xlink:href','#moon');
-        DarkSelector[1].setAttribute('xlink:href','#moon');
-        swtChange.innerHTML = 'تم تاریک'
+        DarkSelector[0].setAttribute('xlink:href','#sun');
+        DarkSelector[1].setAttribute('xlink:href','#sun');
+        swtChange.innerHTML = 'تم روشن';
+        window.localStorage.setItem('theme','dark');
         setTimeout(function(){
             isDark = true;
         },1)
     }if(isDark == true){
         isDark = false
         document.documentElement.className = 'mdl-js';
-        swtChange.innerHTML = 'تم روشن'
-        DarkSelector[1].setAttribute('xlink:href','#sun')
-        DarkSelector[0].setAttribute('xlink:href','#sun')
+        swtChange.innerHTML = 'تم تاریک';
+        window.localStorage.setItem('theme','mdl-js');
+        DarkSelector[1].setAttribute('xlink:href','#moon')
+        DarkSelector[0].setAttribute('xlink:href','#moon')
         }
 })
 function SwTheme(){
     if (!isDark) {
         document.documentElement.className = 'dark';
-        DarkSelector[0].setAttribute('xlink:href','#moon');
-        DarkSelector[1].setAttribute('xlink:href','#moon');
-        swtChange.innerHTML = 'تم تاریک'
+        DarkSelector[0].setAttribute('xlink:href','#sun');
+        DarkSelector[1].setAttribute('xlink:href','#sun');
+        swtChange.innerHTML = 'تم روشن';
+        window.localStorage.setItem('theme','dark');
         setTimeout(function(){
             isDark = true;
         },1)
     }if(isDark == true){
         isDark = false
         document.documentElement.className = 'mdl-js';
-        swtChange.innerHTML = 'تم روشن'
-        DarkSelector[1].setAttribute('xlink:href','#sun')
-        DarkSelector[0].setAttribute('xlink:href','#sun')
+        swtChange.innerHTML = 'تم تاریک';
+        window.localStorage.setItem('theme','mdl-js');
+        DarkSelector[1].setAttribute('xlink:href','#moon')
+        DarkSelector[0].setAttribute('xlink:href','#moon')
         }
 }
 ShowingStoreBasket.addEventListener('click',(e)=>{
