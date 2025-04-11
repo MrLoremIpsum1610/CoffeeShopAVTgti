@@ -55,9 +55,16 @@ module.exports = {
         bgHeader:'#00000080',
 
       }
-
-
     },
+    container: {
+      center:true,
+      padding: {
+        DEFAULT:'1rem',
+        lg:'0.625rem',
+        '2xl':'17.25rem',
+      }
+    },
+
   },
   plugins: [
     plugin(function({ addVariant }) {

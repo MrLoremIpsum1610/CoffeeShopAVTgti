@@ -1,4 +1,4 @@
-
+const $ = document
 const person = {
     name:"Ali",
     family:"Ibn AbiTaleb",
@@ -13,7 +13,7 @@ const person = {
 
 }
 
-document.getElementById("demo").innerHTML = FullName(person.name,person.family,person.surname);
+$.getElementById("demo").innerHTML = FullName(person.name,person.family,person.surname);
 console.log(FullName(person.name,person.family,person.surname))
 
 let inputedNum = '5'
@@ -149,24 +149,24 @@ let dontClose = null;
 
 
 //#region 
-const navbn = document.querySelector('.closed');
+const navbn = $.querySelector('.closed');
 let isNavOpen = false;
-const Drop = document.querySelector('.drop');
-const DropDown = document.querySelector('.dropdown');
-const Dropping = document.querySelectorAll('.dropping');
-const Rotate = document.querySelector('.rotating');
-const closedd = document.querySelector('.closing');
-const itemM = document.querySelector('.opneup');
-const navopen = document.querySelector('.clickop')
-const switchTheme = document.querySelectorAll('.switch-white-theme');
-let DarkSelector = document.querySelectorAll('.Switched');
-const swtChange = document.querySelector('.swt-ch');
-const DropStoreC = document.querySelector('.DropStore');
-const DropStoreCV = document.querySelector('.DropStoreCV');
-const DroppingStoreC = document.querySelector('.DroppingStore');
-const ShowingStoreBasket = document.querySelector('.ShowStoreBasket');
-const ShowingBasket = document.querySelector('.ShowingBasket');
-const bgD = document.querySelector('.bgUnTouch');
+const Drop = $.querySelector('.drop');
+const DropDown = $.querySelector('.dropdown');
+const Dropping = $.querySelectorAll('.dropping');
+const Rotate = $.querySelector('.rotating');
+const closedd = $.querySelector('.closing');
+const itemM = $.querySelector('.opneup');
+const navopen = $.querySelector('.clickop')
+const switchTheme = $.querySelectorAll('.switch-white-theme');
+let DarkSelector = $.querySelectorAll('.Switched');
+const swtChange = $.querySelector('.swt-ch');
+const DropStoreC = $.querySelector('.DropStore');
+const DropStoreCV = $.querySelector('.DropStoreCV');
+const DroppingStoreC = $.querySelector('.DroppingStore');
+const ShowingStoreBasket = $.querySelector('.ShowStoreBasket');
+const ShowingBasket = $.querySelector('.ShowingBasket');
+const bgD = $.querySelector('.bgUnTouch');
 
 //#endregion
 Dropping[0].addEventListener('click',(e)=>{
@@ -200,7 +200,7 @@ if (window.localStorage.getItem('theme') == 'dark') {
 
 switchTheme[0].addEventListener('click',(e)=>{
     if (!isDark) {
-        document.documentElement.className = 'dark';
+        $.documentElement.className = 'dark';
         DarkSelector[0].setAttribute('xlink:href','#sun');
         DarkSelector[1].setAttribute('xlink:href','#sun');
         swtChange.innerHTML = 'تم روشن';
@@ -210,7 +210,7 @@ switchTheme[0].addEventListener('click',(e)=>{
         },1)
     }if(isDark == true){
         isDark = false
-        document.documentElement.className = 'mdl-js';
+        $.documentElement.className = 'mdl-js';
         swtChange.innerHTML = 'تم تاریک';
         window.localStorage.setItem('theme','mdl-js');
         DarkSelector[1].setAttribute('xlink:href','#moon')
@@ -219,7 +219,7 @@ switchTheme[0].addEventListener('click',(e)=>{
 })
 function SwTheme(){
     if (!isDark) {
-        document.documentElement.className = 'dark';
+        $.documentElement.className = 'dark';
         DarkSelector[0].setAttribute('xlink:href','#sun');
         DarkSelector[1].setAttribute('xlink:href','#sun');
         swtChange.innerHTML = 'تم روشن';
@@ -229,7 +229,7 @@ function SwTheme(){
         },1)
     }if(isDark == true){
         isDark = false
-        document.documentElement.className = 'mdl-js';
+        $.documentElement.className = 'mdl-js';
         swtChange.innerHTML = 'تم تاریک';
         window.localStorage.setItem('theme','mdl-js');
         DarkSelector[1].setAttribute('xlink:href','#moon')
